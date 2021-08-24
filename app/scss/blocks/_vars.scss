@@ -1,13 +1,17 @@
 // Colors
 $black: #000000;
 $white: #ffffff;
-$bg:#272727;
-$text-color: #727272;
+$yellow: #FFD600;
 // Colors
 // Font
-$font: 'Roboto';
-$font-default: 400 16px/22px $font;
-$font-title: 700 40px/ 47px $font;
+$font: 'Montserrat';
+$font-decor-name: 'Pacifico';
+
+$font-default: 500 20px/26px $font;
+$font-title: 800 40px/ 45px $font;
+
+
+$font-decor: 400 23px / 28px $font-decor-name;
 // Font
 
 %bg-cover{

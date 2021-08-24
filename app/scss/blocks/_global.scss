@@ -21,12 +21,9 @@ img {
 body {
 	font: $font-default;
 	background-color: $white;
-	color: $text-color;
-	display: flex;
-	flex-direction: column;
+	color: $black;
 	min-height: 100vh;
-	letter-spacing: 0.43px;
-
+	font-style: normal;
 }
 
 .main {
@@ -44,12 +41,13 @@ body {
 }
 
 .wrapper {
-	max-width: 1950px;
+	max-width: 1920px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .container {
-	max-width: 1542px;
+	max-width: 1330px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
