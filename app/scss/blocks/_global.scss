@@ -61,3 +61,15 @@ body {
 	transition: opacity 1.3s;
 }
 
+.link{
+	background: linear-gradient(93deg, #FF2E00 3.68%, #FF9E57 48.7%, #FF2E00 95.39%);
+box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.47);
+border-radius: 50px;
+color: $white;
+padding: 22px 42px;
+font: 700 30px / 37px $font;
+max-width: 371px;
+width: 100%;
+text-align: center;
+display: block;
+}
