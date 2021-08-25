@@ -1,0 +1,188 @@
+.why {
+  padding-top: 65px;
+  background-position: 95% bottom;
+  background-image: url(../images/dest/decor/decor-why.png);
+  padding-bottom: 73px;
+  position: relative;
+  background-size: 44% 96%;
+  background-repeat: no-repeat;
+
+  &-left {
+    margin-right: 157px;
+  }
+
+  &-right {
+    width: 255px;
+    padding: 12px 41px 16px 27px;
+    background-color: #79c89c;
+    position: relative;
+    border-radius: 10px;
+    margin-top: -44px;
+
+    &::after {
+      width: 70px;
+      height: 85px;
+      content: '';
+      position: absolute;
+      bottom: -0.8px;
+      right: -40px;
+      clip-path: polygon(100% 100%, 0 66%, 0 100%);
+      background-color: inherit;
+    }
+
+    &__text {
+      font: 600 23px / 28px $font;
+      letter-spacing: 0.49px;
+      color: $white;
+    }
+  }
+
+
+  &__title {
+    margin-bottom: 35px;
+
+    &--accent {
+      color: #00166d;
+    }
+  }
+
+  &__descr {
+    max-width: 598px;
+
+    margin-bottom: 27px;
+
+    position: relative;
+    padding: 5px;
+    z-index: 1;
+
+    &::before {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 20px;
+      background: linear-gradient(263.78deg, #79C89C 0%, #BEEFD4 46.62%, #248851 101.72%);
+    }
+
+    &-text {
+      background-color: #fff;
+      border-radius: 20px;
+      font: 500 16px / 24px $font;
+      letter-spacing: 0.46px;
+      padding: 25px 35px 35px 36px;
+
+      &--accent {
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+.why-info {
+  &__title {
+    margin-bottom: 23px;
+    font: 800 20px / 24px $font;
+    letter-spacing: 0.48px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icons {
+    display: flex;
+    margin-left: 40px
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__left {
+    margin-right: 60px;
+    position: relative;
+
+    &::after {
+
+      content: '';
+      position: absolute;
+      top: -24px;
+      left: 10px;
+      width: 82px;
+      height: 130px;
+      @extend %bg-cover;
+      background-image: url('../images/dest/decor/ellipse-pink.png');
+    }
+  }
+
+  &__right {
+    margin-right: 34px;
+    position: relative;
+
+    &::after {
+
+      content: '';
+      position: absolute;
+      top: -18px;
+      left: 21px;
+      width: 67px;
+      height: 108px;
+      @extend %bg-cover;
+      background-image: url('../images/dest/decor/ellipse-blue.png');
+    }
+  }
+
+  &__icon {
+    width: 31px;
+    height: 66px;
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    width: 301px;
+    background-color: $yellow;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+    padding: 19px 16px 28px 56px;
+  }
+
+  &__count {
+    font: 800 25px / 25px $font;
+    letter-spacing: 0.48px;
+  }
+
+  &__who {
+    font: 800 16px / 24px $font;
+    letter-spacing: 0.48px;
+  }
+
+  &__text {
+    font: 500 16px / 22px $font;
+    letter-spacing: 0.48px;
+
+    &--accent {
+      font-weight: 800;
+    }
+  }
+}
+
+.why-decor__left {
+  width: 251px;
+  top: 45%;
+  left: 0;
+  transform: translateY(-50%);
+
+  &-text {
+    font: 400 23px / 28px $font-decor-name;
+    letter-spacing: 0.48px;
+    transform: rotate(16deg) translateX(68px) translateY(-15px);
+    display: block;
+  }
+}

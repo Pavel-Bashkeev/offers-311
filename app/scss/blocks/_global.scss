@@ -60,7 +60,11 @@ body {
 	position: absolute;
 	transition: opacity 1.3s;
 }
-
+.section-title{
+	font: 800 40px / 45px $font;
+	width: fit-content;
+	margin: 0 auto;
+}
 .link{
 	background: linear-gradient(93deg, #FF2E00 3.68%, #FF9E57 48.7%, #FF2E00 95.39%);
 box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.47);
