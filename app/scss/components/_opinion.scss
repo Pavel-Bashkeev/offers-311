@@ -1,0 +1,59 @@
+.opinion {
+  padding: 65px 0 40px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+}
+.opinion-bg{
+  margin-top: -14px;
+}
+.opinion-content {
+  max-width: 592px;
+  margin-right: 69px;
+
+  &__text {
+    font: 500 20px / 26px $font;
+    font-style: italic;
+
+    &:first-child {
+      margin-bottom: 25px;
+    }
+
+    &--accent {
+      font-weight: 800;
+    }
+  }
+
+  &__author {
+    font: 800 30px / 30px $font;
+    font-style: italic;
+
+    &-quote {
+      font: 800 100px/70px Montserrat;
+      transform: translateY(48px) translateX(34px);
+      display: inline-block;
+      font-style: italic;
+      color: #79C89C;
+    }
+  }
+}
+.opinion-decor__left{
+  left:0;
+  top:14%;
+}
+.opinion-decor__right{
+  right: 0;
+  top:7%;
+  &-text{
+    font:400 23px / 28px $font-decor-name;
+    display: block;
+    width: fit-content;
+    transform: translateY(87px) rotate(
+-27deg
+) translateX(59px);
+  }
+  &-img{
+    width: 340px;
+  }
+}

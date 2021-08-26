@@ -52,6 +52,7 @@
 }
 .weight-content{
   position: relative;
+  margin-bottom: 45px;
   z-index: 1;
   &__left{
     width: 50%;
@@ -99,5 +100,18 @@
       letter-spacing: 0.6px;
       margin-left: 30px;
     }
+  }
+}
+.weight-btns{
+  z-index: 2;
+  &__text{
+    font: 700 20px / 28px $font;
+    letter-spacing: 1px;
+    background-color: $yellow;
+    clip-path: polygon(0% 0%, 93% 0%, 100% 50%, 93% 100%, 0% 100%);
+    max-width: 276px;
+    padding: 7px 14px 8px 22px;
+    left: 170px;
+    top: 5px;
   }
 }

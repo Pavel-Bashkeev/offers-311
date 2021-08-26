@@ -1,0 +1,33 @@
+.order{
+  padding: 60px 0;
+  background-color: #f7f7f7;
+  &__title{
+    margin-bottom: 45px;
+  }
+}
+.order-steps{
+  
+  justify-content: center;
+  gap: 48px 40px;
+  &__item{
+    width: 221px;
+    &-top{
+      margin-bottom: 18px;
+    }
+    &-icon{
+      width: 46px;
+      height: 46px;
+      margin-right: 10px;
+    }
+    &-text{
+      font: 400 16px / 20.5px $font;
+      letter-spacing: 0.3px;
+    }
+    &-count{
+      color: $yellow;
+      font:900 40px / 45px $font;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+  }
+}

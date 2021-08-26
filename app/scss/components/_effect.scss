@@ -1,0 +1,106 @@
+.effect {
+  min-height: 675px;
+  padding: 62px 0 48px;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #B9EFD2 100%);
+    opacity: 0.8;
+    z-index: -1;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    filter: blur(20px);
+    background-image: url('../images/dest/decor/sectionEffect/effect-bg.jpg');
+    z-index: -1;
+    @extend %bg-cover;
+  }
+
+  &__title {
+    font: 800 36px / 44px $font;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+
+    &--accent {
+      text-transform: uppercase;
+    }
+  }
+
+  &__subtitle {
+    font: 400 25px / 30px $font;
+    letter-spacing: 0.6px;
+    max-width: 661px;
+    margin-bottom: 14px;
+
+    &--accent {
+      font-weight: 700;
+    }
+  }
+}
+
+.effect-content {
+  &__box {
+    margin-left: 97px;
+    z-index: 1;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 84px;
+      left: -77px;
+      width: 266px;
+      height: 266px;
+      background-color: #fff;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+
+  &__list {
+    max-width: 633px;
+    width: 100%;
+    padding-top: 55px;
+    margin-left: -30px;
+
+    &-item {
+      &:not(:last-child) {
+        background: linear-gradient(180deg, #FFAB00 0%, #DE8500 100%);
+        color: $white;
+        margin-bottom: 22px;
+        padding: 27px 114px 34px 72px;
+        clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 50%);
+      }
+      &:last-child{
+        font: 25px / 30px $font;
+        letter-spacing: 1.2px;
+        padding-left: 74px;
+      }
+    }
+  }
+}
+
+.effect-decor {
+  z-index: 2;
+  bottom: -50px;
+  right: 108px;
+
+  &__text {
+    top: 0;
+    right: 0;
+    max-width: 200px;
+    transform: rotate(19deg) translate(89px, 14px);
+    font: 400 23px /28px $font-decor-name;
+    letter-spacing: 0.6px;
+  }
+}
