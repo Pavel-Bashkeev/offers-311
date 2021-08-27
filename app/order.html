@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="shortcut icon" href="./images/dest/favicon.png" type="image/png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Fortunella</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="steps">
+      <div class="container steps__container">
+        <div class="steps__items df">
+          <p class="steps__item">1</p>
+          <p class="steps__item">2</p>
+          <p class="steps__item">
+            <svg class='steps__item-icon db' style="width: 38px; height: 38px;">
+              <use xlink:href=images/dest/sprite.svg#check></use>
+            </svg>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="stock">
+      <div class="container">
+        <div class="stock-inner df align-center">
+          <p class="stock-inner__text">
+            Ваша специальная скидка 40% с бесплатной доставкой истекает через:
+          </p>
+          <div class="stock-timer df align-center">
+            <svg class='stock-timer__icon' width="46" height="46">
+            <use xlink:href=images/dest/sprite.svg#timer></use>
+            </svg>
+            <div class="stock-timer__inner df align-center">
+              <span class="stock-timer__item timer-minuts db"></span>
+              <span class="stock-timer__dots db">:</span>
+              <span class="stock-timer__item timer-second db"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

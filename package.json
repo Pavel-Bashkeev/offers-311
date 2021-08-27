@@ -35,7 +35,8 @@
         "gulp-ttf2woff2": "^3.0.0",
         "gulp-uglify-es": "^2.0.0",
         "gulp-webp": "^4.0.1",
-        "imagemin-pngquant": "^9.0.2"
+        "imagemin-pngquant": "^9.0.2",
+        "ttf2eot": "^3.0.0"
     },
     "dependencies": {
         "nouislider": "^15.0.0",

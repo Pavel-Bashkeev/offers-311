@@ -1,0 +1,22 @@
+.stock{
+  &-inner{
+    background-color: $yellow;
+    padding: 11px 57px 13px 68px;
+    &__text{
+      margin-right: 40px;
+      font: 700 25px / 34px $font-open;
+    }
+  }
+}
+.stock-timer{
+  &__icon{
+    margin-right: 17px;
+  }
+  &__item{
+    font: 700 40px / 50px $font-open;
+  }
+  &__dots{
+    font: 700 40px / 50px $font-open;
+    margin: 0 10px;
+  }
+}

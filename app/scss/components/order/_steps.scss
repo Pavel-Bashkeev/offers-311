@@ -1,0 +1,50 @@
+.steps {
+  padding: 41px 0 33px;
+
+  &__items {
+    max-width: 690px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    position: relative;
+    background-image: url('../images/dest/sprite.svg#steps-line');
+    @extend %bg-cover;
+    &::after{
+      content: '';
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      left: 10px;
+      width: 50%;
+      height: 3px;
+      background-color: #CC0D00;
+    }
+  }
+
+  &__item {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    font: 700 20px / 27px "Open Sans";
+    color: $white;
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #CC0D00;
+        border-radius: 50px;
+        z-index: -1;
+      }
+    }
+  }
+}

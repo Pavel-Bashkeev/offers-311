@@ -16,7 +16,11 @@
 @include font-face('Montserrat', '../fonts/Montserrat-ExtraBoldItalic',800,'italic');
 /* montserrat-900 - latin */
 @include font-face('Montserrat', '../fonts/Montserrat-Black',900);
-/* open-sans-regular - latin */
+/* open-sans - latin */
 @include font-face('Open Sans', '../fonts/OpenSans-Regular',400);
+@include font-face('Open Sans', '../fonts/OpenSans-Italic',400, italic);
+@include font-face('Open Sans', '../fonts/OpenSans-SemiBold',600);
+@include font-face('Open Sans', '../fonts/OpenSans-Bold',700);
+@include font-face('Open Sans', '../fonts/OpenSans-ExtraBold',800);
 /* pacifico-regular - latin */
 @include font-face('Pacifico', '../fonts/Pacifico-Regular',400);
