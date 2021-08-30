@@ -1,47 +1,16 @@
-const timer = (id) => {
+const timer =  document.querySelector('.stock-timer__inner'),
+  minutes = timer.querySelector('.timer-minuts'),
+  seconds = timer.querySelector('.timer-second');
 
-  const addZero = (num) => {
-    if(num <= 9){
-      return '0'+num;
-    } else{
-      return num;
-    }
-  }
+  let time = 900;
+  const startCount = setInterval(startTimer, 1000);
 
+function startTimer(){
+  let minutsTime = Math.floor(time / 60);
+  let secondTime = Math.floor(time % 60);
 
-  const getTimeRemaining = () => {
-    let time = Math.floor(new Date()) + 900000,
-      seconds = Math.floor((time / 1000) % 60),
-      minuts = Math.floor((time / 1000 / 60) % 60),
-      hours = Math.floor((time / (1000 * 60 * 60)) % 24);
-    
-    return {  
-      'total': time,
-      'hours': hours,
-      'minuts': minuts,
-      'seconds': seconds
-    }
-  }
-  console.log();
-  const setClock = (selector) => {
-    const timer = document.querySelector(selector),
-      minuts = timer.querySelector('.timer-minuts'),
-      seconds = timer.querySelector('.timer-second'),
-      timeInterval = setInterval(updateClock, 1000);
-
-    function updateClock() {
-      const time = getTimeRemaining();
-      minuts.textContent = addZero(time.minuts);
-      seconds.textContent = addZero(time.seconds);
-      if (time.total <= 0) {
-        minuts.textContent = '00';
-        seconds.textContent = '00';
-        clearInterval(timeInterval);
-      }
-    }
-  }
-
-  setClock(id);
+  minutes.textContent = minutsTime < 10 ? '0'+ minutsTime : minutsTime;
+  seconds.textContent = secondTime < 10 ? '0' + secondTime : secondTime;
+  
+  time == 0 ? clearInterval(startCount):time--; 
 }
-
-timer('.stock-timer__inner')
