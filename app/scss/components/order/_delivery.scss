@@ -1,0 +1,15 @@
+.delivery{
+  margin-bottom: 45px;
+  &__img{
+    width: 161px;
+    height: 161px;
+    margin: 0 auto 15px;
+  }
+  &__text{
+    font: 'italic' 800 20px / 27px $font-open;
+    color: $black;
+    max-width: 170px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

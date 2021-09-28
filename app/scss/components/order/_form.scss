@@ -1,0 +1,237 @@
+.order-form {
+  gap: 35px 15px;
+  align-items: flex-start;
+}
+
+.order-action {
+  max-width: 458px;
+
+}
+
+.order {
+  background-color: #248851;
+  border-radius: 20px;
+  padding: 22px 32px 60px 22px;
+  text-align: center;
+  margin-bottom: 35px;
+
+  &__inform {
+    color: #FFBE17;
+    font: 'italic'700 30px / 40px $font-open;
+    max-width: 245px;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    color: $white;
+    font: 'italic'700 30px/ 40px $font-open;
+    margin-bottom: 15px;
+  }
+
+  &__payment {
+    margin-bottom: 45px;
+
+    &-img {
+      width: 69px;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  &-form {
+    gap: 35px 20px;
+  }
+
+  &-btn {
+    color: $white;
+    font: 700 25px / 30px $font-open;
+    padding: 25px 43px;
+    background: linear-gradient(180deg, #FF5C00 0%, #CD5600 100%);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-bottom: 40px;
+  }
+}
+
+.order-timer {
+  background: #136337;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  max-width: 320px;
+  margin: 0 auto 15px;
+  display: flex;
+  justify-content: center;
+
+  span {
+    font: 800 55px / 74px $font-open;
+    color: $white;
+  }
+
+  &__delimiter {
+    margin: 0 18px;
+  }
+}
+
+.choice-address {
+  margin-bottom: 17px;
+
+  &__btns {
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 17px;
+  }
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &__text {
+    max-width: 390px;
+    font: 600 18px / 24px $font-open;
+    color: $white;
+  }
+
+  &__radio--custom {
+    width: 23px;
+    height: 23px;
+    background-color: $white;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: '';
+      background-color: $black;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: none;
+    }
+  }
+
+  &__radio:checked+.choice-address__radio--custom {
+    &::after {
+      display: block;
+    }
+  }
+
+  &__inputs {
+    display: none;
+    max-width: 320px;
+    margin: 0px auto;
+  }
+}
+
+.cart {
+  margin-bottom: 80px;
+
+  &-info {
+    max-width: 100px;
+    width: 100%;
+    margin-right: 27px;
+
+    &__text {
+      font: 400 14px / 20px $font-open;
+      color: $white;
+      text-align: left;
+
+      &:nth-child(2) {
+        margin: 40px 0px;
+      }
+    }
+  }
+}
+
+.cart-data {
+  max-width: 273px;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, 62px);
+  grid-gap: 8px 7px;
+
+  &__number {
+    grid-column: span 2;
+    padding-left: 20px;
+    font: 400 20px /25px $font-open;
+  }
+
+  &__cvv {
+    padding-left: 20px;
+    font: 400 20px /25px $font-open;
+  }
+
+  &__select {
+    appearance: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+
+
+    &-option {
+      text-align: center;
+      font: 400 14px / 20px $font-open;
+    }
+  }
+}
+
+.select-inner {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 17px;
+    height: 9px;
+    @extend %bg-cover;
+    background-image: url('../images/dest/sprite.svg#arrowDown');
+  }
+}
+
+.cart-prompt {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+
+  &__title {
+    color: $white;
+    text-decoration: underline;
+    font: 400 14px / 19px $font-open;
+    cursor: help;
+    padding-left: 20px;
+    z-index: 1;
+
+    &:hover+.cart-prompt__descr {
+      opacity: 1;
+      z-index: 2;
+      transition: all .3s;
+    }
+  }
+
+  &__descr {
+    transition: all .3s;
+    opacity: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    position: absolute;
+    top: 44px;
+    right: 53px;
+    font: 400 14px / 19px $font-open;
+    z-index: -1;
+  }
+}
+
+.order-security {
+  max-width: 320px;
+  margin: 0 auto;
+}
