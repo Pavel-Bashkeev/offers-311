@@ -52,7 +52,7 @@
 
     .composition-items__item-text {
       top: 47%;
-    left: -111px;
+      left: -111px;
     }
   }
 
@@ -62,7 +62,7 @@
 
     .composition-items__item-text {
       top: 22px;
-    left: -22px;
+      left: -22px;
     }
   }
 
@@ -72,7 +72,7 @@
 
     .composition-items__item-text {
       top: 51%;
-    right: -40px;
+      right: -40px;
     }
   }
 
@@ -82,7 +82,7 @@
 
     .composition-items__item-text {
       top: 7px;
-    right: -45%;
+      right: -45%;
     }
   }
 
@@ -97,20 +97,24 @@
     }
   }
 }
-.composition-text--flag{
+
+.composition-text--flag {
   background-color: $yellow;
   max-width: 509px;
   padding: 12px 61px 12px 120px;
   clip-path: polygon(0% 0%, 96% 0%, 100% 50%, 96% 100%, 0% 100%);
   position: relative;
-  
+
 }
-.composition-block-with-flag{
+
+.composition-block-with-flag {
   margin-bottom: 43px;
-  .composition-text--flag{
+
+  .composition-text--flag {
     font: 600 15px / 24px $font;
   }
-  &::before{
+
+  &::before {
     z-index: 1;
     content: '';
     position: absolute;
@@ -122,17 +126,20 @@
     background-image: url('../images/dest/decor/sectionComposition/flag.png');
   }
 }
-.composition-decor__left{
+
+.composition-decor__left {
   top: 12.69%;
-  left:0;
+  left: 0;
 }
-.composition-decor__right{
+
+.composition-decor__right {
   right: 0;
   top: 26%;
-  &-text{
+
+  &-text {
     position: absolute;
     bottom: 35px;
-    left:0;
+    left: 0;
     background-color: #248851;
     border-radius: 30px;
     padding: 12px 41px;
@@ -140,4 +147,294 @@
     font-style: italic;
     color: $white;
   }
+}
+
+@media (max-width: 1800px) {
+  .composition-decor__left {
+    display: none;
+  }
+
+  .composition-decor__right {
+    display: none;
+  }
+}
+
+@media (max-width: 1345px) {
+  .composition-items {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__main {
+      margin: 0;
+    }
+
+    &__item-text {
+      position: relative;
+    }
+
+    &__item.item-1 {
+      top: 0px;
+      left: 0px;
+
+      .composition-items__item-text {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        max-width: 190px;
+      }
+    }
+
+    &__item.item-2 {
+      top: 0px;
+      left: 0px;
+
+      .composition-items__item-text {
+        top: 0px;
+        left: 0px;
+        max-width: 190px;
+
+      }
+    }
+
+    &__item.item-3 {
+      left: 0px;
+      bottom: 0px;
+
+      .composition-items__item-text {
+        top: 0px;
+        left: 0px;
+      }
+    }
+
+    &__item.item-4 {
+      left: 0px;
+      bottom: 0px;
+      margin-left: -300px;
+
+      .composition-items__item-text {
+        top: 0px;
+        left: 0px;
+      }
+    }
+
+    &__item.item-5 {
+      right: 0px;
+      bottom: 0px;
+
+      .composition-items__item-text {
+        top: 0;
+        right: 0px;
+      }
+    }
+
+    &__item.item-6 {
+      right: 0px;
+      top: 0px;
+
+      .composition-items__item-text {
+        top: 7px;
+        right: 0px;
+      }
+    }
+
+    &__item.item-7 {
+      right: 0px;
+      top: 0px;
+      margin-left: -190px;
+
+      .composition-items__item-text {
+        top: 0px;
+        right: -0px;
+        max-width: 250px;
+      }
+    }
+  }
+
+  .composition-items__item {
+    position: relative;
+    width: 200px;
+  }
+}
+
+@media (max-width:700px) {
+  .composition-items__main {
+    display: none;
+  }
+
+  .composition-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    background-image: url('../images/dest/decor/sectionComposition/mainImgMin.png');
+
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 158px 50%;
+
+    &__main {
+      margin: 0;
+    }
+
+    &__item-text {
+      position: relative;
+      margin-top: auto;
+      text-align: center;
+      width: 100%;
+    }
+
+    &__item {
+      width: 235px;
+      height: 205px;
+      display: flex;
+      align-items: flex-end;
+      background-repeat: no-repeat;
+      background-size: 70%;
+      background-position: 50% 0;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__item-img {
+      display: none;
+    }
+
+    &__item.item-1 {
+      top: 0px;
+      left: 0px;
+      background-image: url('../images/dest/decor/sectionComposition/items/min/item-1.png');
+      background-size: 75%;
+
+      .composition-items__item-text {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        max-width: 100%;
+      }
+    }
+
+    &__item.item-2 {
+      top: 0px;
+      left: 0px;
+      background-image: url('../images/dest/decor/sectionComposition/items/min/item-2.png');
+      background-size: 100%;
+
+      .composition-items__item-text {
+        top: 0px;
+        left: 0px;
+        max-width: 100%;
+      }
+    }
+
+    &__item.item-3 {
+      left: 0px;
+      bottom: 0px;
+      background-image: url('../images/dest/decor/sectionComposition/items/min/item-3.png');
+      background-size: 80%;
+
+      .composition-items__item-text {
+        top: 0px;
+        left: 0px;
+        max-width: 100%;
+      }
+    }
+
+    &__item.item-4 {
+      left: 0px;
+      bottom: 0px;
+      margin-left: 0px;
+      background-image: url('../images/dest/decor/sectionComposition/items/min/item-4.png');
+      background-size: 70%;
+
+      .composition-items__item-text {
+        top: 0px;
+        left: 0px;
+        max-width: 100%;
+      }
+    }
+
+    &__item.item-5 {
+      right: 0px;
+      bottom: 0px;
+      background-image: url('../images/dest/decor/sectionComposition/items/min/item-5.png');
+      background-size: 90%;
+
+      .composition-items__item-text {
+        top: 0;
+        right: 0px;
+        max-width: 100%;
+      }
+    }
+
+    &__item.item-6 {
+      right: 0px;
+      top: 0px;
+      background-image: url('../images/dest/decor/sectionComposition/items/min/item-6.png');
+      background-size: 90%;
+
+      .composition-items__item-text {
+        top: 7px;
+        right: 0px;
+        max-width: 100%;
+      }
+    }
+
+    &__item.item-7 {
+      right: 0px;
+      top: 0px;
+      margin-left: 0px;
+      background-image: url('../images/dest/decor/sectionComposition/items/min/item-7.png');
+      background-size: 85%;
+
+      .composition-items__item-text {
+        top: 0px;
+        right: -0px;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width:420px) {
+  .composition__title {
+    padding-left: 15px;
+    text-align: center;
+}
+.composition__subtitle {
+  padding: 0 15px;
+  text-align: center;
+}
+  .composition-text--flag {
+    padding: 12px 23px 12px 110px;
+  }
+  .composition__container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .composition-items {
+    background-size: 100px 50%;
+  }
+  .composition-block-with-flag {
+    padding: 0 15px;
+}
+.composition-block-with-flag::before {
+
+  top: -20px;
+  left: -4px;
+}
+}
+@media (max-width: 375px) {
+  .composition-text--flag {
+    padding: 12px 12px 18px 93px;
+}
+.composition-block-with-flag::before {
+  top: -13px;
+  left: -10px;
+}
+.composition__subtitle {
+  font: 700 20px/25px Montserrat;
+}
 }

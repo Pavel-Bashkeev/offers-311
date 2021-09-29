@@ -7,6 +7,7 @@
 
 .comment-items {
   gap: 70px 50px;
+  justify-content: center;
 
   &__item {
     background: #F7F7F7;
@@ -43,4 +44,51 @@
 .comment-decor__left{
   left: 0;
   top: 15%;
+}
+@media (max-width: 1800px) {
+  .comment-decor__left {
+   display: none;
+}
+.comment-decor__right {
+  display: none;
+}
+}
+@media (max-width: 1200px) {
+  .comment-items__item {
+    width: 80%;
+}
+}
+@media (max-width: 700px) {
+  .comment-items__item {
+    background: #fff;
+    box-shadow: none;
+    width: 100%;
+}
+.comment__title {
+  text-align: center;
+}
+}
+@media (max-width: 500px) {
+  .comment-items__item {
+    padding: 17px 0 17px 0px;
+}
+.comment-items__item-text {
+  padding-right: 0px;
+}
+}
+@media (max-width: 420px) {
+  .comment__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+  .comment-items__item {
+    flex-direction: column;
+}
+.comment-items__item-img {
+  margin-right: auto;
+  margin-left: auto;
+}
+.comment-items {
+  gap: 0px 50px;
+}
 }

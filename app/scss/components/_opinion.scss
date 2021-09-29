@@ -3,14 +3,21 @@
 
   &__title {
     margin-bottom: 40px;
+    text-align: center;
   }
 }
-.opinion-bg{
+
+.opinion-bg {
   margin-top: -14px;
+  position: relative;
+  z-index: 1;
 }
+
 .opinion-content {
   max-width: 592px;
   margin-right: 69px;
+  position: relative;
+  z-index: 1;
 
   &__text {
     font: 500 20px / 26px $font;
@@ -38,22 +45,70 @@
     }
   }
 }
-.opinion-decor__left{
-  left:0;
-  top:14%;
+
+.opinion-decor__left {
+  left: 0;
+  top: 14%;
 }
-.opinion-decor__right{
+
+.opinion-decor__right {
   right: 0;
-  top:7%;
-  &-text{
-    font:400 23px / 28px $font-decor-name;
+  top: 7%;
+
+  &-text {
+    font: 400 23px / 28px $font-decor-name;
     display: block;
     width: fit-content;
-    transform: translateY(87px) rotate(
--27deg
-) translateX(59px);
+    transform: translateY(87px) rotate(-27deg) translateX(59px);
   }
-  &-img{
+
+  &-img {
     width: 340px;
   }
+}
+
+@media (max-width: 1800px) {
+  .opinion-decor__left {
+    display: none;
+  }
+
+  .opinion-decor__right {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .opinion__container {
+    flex-wrap: wrap;
+  }
+  .opinion-content {
+    max-width: 100%;
+    margin-right: 0px;
+    order:1;
+  }
+  .opinion-bg {
+    margin-top: -14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+@media (max-width: 420px) {
+  .opinion-content__author-quote {
+    transform: translateY(36px) translateX(0px);
+    font: 800 85px/70px Montserrat;
+}
+}
+@media (max-width: 375px) {
+  .opinion-content__author {
+    font: 800 26px/30px Montserrat;
+}
+.opinion-content__author-quote {
+  transform: translateY(36px) translateX(5px);
+  font: 800 85px/70px Montserrat;
+}
+}
+@media (max-width: 320px) {
+  .opinion-content__author {
+    font: 800 24px/30px Montserrat;
+}
 }
