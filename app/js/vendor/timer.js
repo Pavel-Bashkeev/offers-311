@@ -7,6 +7,7 @@ if(timer){
  let minutesOrder = timerOrder.querySelector('.order-timer__minutes')
  let secondsOrder = timerOrder.querySelector('.order-timer__seconds')
   let time = 900;
+  let timeSecond = 900;
   const startCount = setInterval(startTimer, 1000);
   
    function startTimer() {
@@ -22,12 +23,12 @@ if(timer){
   const startCountOrder = setInterval(startOrderTimer, 1000);
 
   function startOrderTimer() {
-    let minutsTime = Math.floor(time / 60);
-    let secondTime = Math.floor(time % 60);
+    let minutsTime = Math.floor(timeSecond / 60);
+    let secondTime = Math.floor(timeSecond % 60);
   
     minutesOrder.textContent = minutsTime < 10 ? '0' + minutsTime : minutsTime;
     secondsOrder.textContent = secondTime < 10 ? '0' + secondTime : secondTime;
   
-    time == 0 ? clearInterval(startCountOrder) : time--;
+    timeSecond == 0 ? clearInterval(startCountOrder) : timeSecond--;
   }
 }

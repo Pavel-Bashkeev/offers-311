@@ -1,23 +1,48 @@
-.stock{
-  &-inner{
+.stock {
+  &-inner {
     background-color: $yellow;
     padding: 11px 57px 13px 68px;
     margin-bottom: 37px;
-    &__text{
+
+    &__text {
       margin-right: 40px;
       font: 700 25px / 34px $font-open;
     }
   }
 }
-.stock-timer{
-  &__icon{
+
+.stock-timer {
+  &__icon {
     margin-right: 17px;
   }
-  &__item{
+
+  &__item {
     font: 700 40px / 50px $font-open;
   }
-  &__dots{
+
+  &__dots {
     font: 700 40px / 50px $font-open;
     margin: 0 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .stock-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stock-inner__text {
+    text-align: center;
+  }
+
+  .stock-inner__text {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  .stock-inner {
+    padding: 11px 10px;
   }
 }

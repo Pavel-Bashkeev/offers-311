@@ -9,10 +9,11 @@
     position: relative;
     background-image: url('../images/dest/sprite.svg#steps-line');
     @extend %bg-cover;
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
-      top:50%;
+      top: 50%;
       transform: translateY(-50%);
       left: 10px;
       width: 50%;
@@ -47,4 +48,28 @@
       }
     }
   }
+}
+
+@media (max-width: 700px) {
+  .steps__items {
+    max-width: 320px;
+    background-image: url('../images/dest/icons/steps-line-min.svg');
+    background-size: contain;
+    padding: 0px 1px;
+  }
+  .steps__items::after {
+
+    left: 5px;
+    height: 2px;
+;
+}
+  .steps__item {
+    width: 20px;
+    height: 24px;
+    font: 700 13px/20px "Open Sans";
+  }
+  .steps__item:not(:last-child)::after {
+    width: 18px;
+    height: 18px;
+}
 }

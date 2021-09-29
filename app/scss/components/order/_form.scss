@@ -1,6 +1,7 @@
 .order-form {
   gap: 35px 15px;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .order-action {
@@ -81,6 +82,7 @@
     justify-content: space-around;
     align-items: center;
     margin-bottom: 17px;
+    margin-top: 20px;
   }
 
   &__label {
@@ -234,4 +236,27 @@
 .order-security {
   max-width: 320px;
   margin: 0 auto;
+}
+@media (max-width: 420px) {
+  .cart-data {
+    max-width: 250px;
+  }
+}
+@media (max-width: 375px) {
+  .cart-info {
+    margin-right: 10px;
+}
+.order {
+  padding: 22px 10px 60px;
+}
+.cart-data {
+  max-width: 230px;
+  grid-template-columns: 47% 47%;
+}
+.cart-info__text:nth-child(2) {
+  margin: 23px 0;
+}
+.order-form {
+  padding-bottom: 20px;
+}
 }
