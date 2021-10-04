@@ -173,17 +173,20 @@
     width: 100%;
     height: 100%;
     background: #fff;
-
+    &::-ms-expand {
+      display: none;
+    }
     &-option {
       text-align: center;
       font: 400 14px / 20px $font-open;
+      cursor: pointer;
     }
   }
 }
 
 .select-inner {
   position: relative;
-
+  
   &::after {
     content: '';
     position: absolute;
@@ -194,6 +197,7 @@
     height: 9px;
     @extend %bg-cover;
     background-image: url('../images/dest/sprite.svg#arrowDown');
+    cursor: pointer;
   }
 }
 
