@@ -226,24 +226,27 @@
 
                   <div class="cart-data dg">
                     <input class="cart-data__number" type="text" name="cart-number" maxlength="19">
-                    <div class="select-inner">
-                      <select class="cart-data__select" name="month" id="month">
-                        <option class="cart-data__select-option" selected='selected' disabled>Месяц</option>
-                        <option class="cart-data__select-option" value="Enero">Январь</option>
-                        <option class="cart-data__select-option" value="Febrero">Февраль</option>
-                        <option class="cart-data__select-option" value="Marzo">Март</option>
-                        <option class="cart-data__select-option" value="Abril">Апрель</option>
-                        <option class="cart-data__select-option" value="Mayo">Май</option>
-                        <option class="cart-data__select-option" value="Junio">Июнь</option>
-                        <option class="cart-data__select-option" value="Julio">Июль</option>
-                        <option class="cart-data__select-option" value="Agosto">Август</option>
-                        <option class="cart-data__select-option" value="Septembre">Сентябрь</option>
-                        <option class="cart-data__select-option" value="Octobre">Октябрь</option>
-                        <option class="cart-data__select-option" value="Novembre">Ноябрь</option>
-                        <option class="cart-data__select-option" value="Diciembre">Декабрь</option>
-                      </select>
-                    </div>
-                    <div class="select-inner">
+                    
+                      <label class="select-inner db" for="month">
+                        <select class="cart-data__select" name="month" id="month">
+                          <option class="cart-data__select-option" selected='selected' disabled>Месяц</option>
+                          <option class="cart-data__select-option" value="Enero">Январь</option>
+                          <option class="cart-data__select-option" value="Febrero">Февраль</option>
+                          <option class="cart-data__select-option" value="Marzo">Март</option>
+                          <option class="cart-data__select-option" value="Abril">Апрель</option>
+                          <option class="cart-data__select-option" value="Mayo">Май</option>
+                          <option class="cart-data__select-option" value="Junio">Июнь</option>
+                          <option class="cart-data__select-option" value="Julio">Июль</option>
+                          <option class="cart-data__select-option" value="Agosto">Август</option>
+                          <option class="cart-data__select-option" value="Septembre">Сентябрь</option>
+                          <option class="cart-data__select-option" value="Octobre">Октябрь</option>
+                          <option class="cart-data__select-option" value="Novembre">Ноябрь</option>
+                          <option class="cart-data__select-option" value="Diciembre">Декабрь</option>
+                        </select>
+                      </label>
+                    
+                    
+                     <label class="select-inner db" for="year">
                       <select class="cart-data__select" id="year" name="year">
                         <option class="cart-data__select-option" selected='selected'>Год</option>
                         <option class="cart-data__select-option" value="2021">2021</option>
@@ -254,7 +257,8 @@
                         <option class="cart-data__select-option" value="2026">2026</option>
                         <option class="cart-data__select-option" value="2027">2027</option>
                       </select>
-                    </div>
+                     </label>
+                   
 
                     <input class="cart-data__cvv" type="password" name="cart-cvv" autocomplete="on" maxlength="3">
                     <div class="cart-prompt">
