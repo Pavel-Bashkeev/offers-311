@@ -173,6 +173,7 @@
     width: 100%;
     height: 100%;
     background: #fff;
+    text-indent: 30px;
     &::-ms-expand {
       display: none;
     }
@@ -244,6 +245,9 @@
 @media (max-width: 420px) {
   .cart-data {
     max-width: 250px;
+  }
+  .cart-data__select{
+    text-indent: 30px;
   }
 }
 @media (max-width: 375px) {
